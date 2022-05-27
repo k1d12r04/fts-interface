@@ -5,69 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <title>File Tracking System</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-
 </head>
 
 <body>
+    <header>
+        <div class="header"><a href="index.html">File Tracking System</a></div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="send-file.html">Send a file</a></li>
+                <li><a href="#">Received files</a></li>
+                <li><a href="#">Sent files</a></li>
+            </ul>
+        </nav>
+        <div class="cta-btns">
+            <button class="sign-up">Sign up</button>
+            <button class="sign-in">Login</button>
+        </div>
+    </header>
 
-    <div class="d-flex justify-content-center">
-        <h1>HELLO</h1>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-6 document-upload-form">
-
-            <div class="file-upload">
-                <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
-                    Document</button>
-
-                <div class="document-upload-wrap">
-                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="application/pdf" />
-                    <div class="drag-text">
-                        <h3>Drag and drop a file</h3>
-                    </div>
-                </div>
-                <div class="file-upload-content ">
-                    <img class="file-upload-image" src="doc-upload-icon.jpg" alt="your document" />
-                    <h4 class="document-title"></h4>
-                    <div class="document-title-wrap">
-                        <button type="button" onclick="removeUpload()" class="remove-document">Remove <span
-                                class="document-title">Uploaded Document</span></button>
-                    </div>
-
-                    <div class="assigned-users">
-                        <h3>Assigned Users</h3>
-                        <ul class="list-group assigned-users-list">
-                            
-                        </ul> 
-                    </div>
-
-                </div>
+    <div class="cta">
+        <div class="sign-up-page hidden">
+            <div class="signup-header">
+                <h1>Sign up</h1>
             </div>
-            
+            <button class="close-btn-up">&times;</button>
+            <form action="#">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="signup-email">Email</label>
+                <input type="mail" id="signup-email" name="email">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password">
+                <div class="checkbox">
+                    <input type="checkbox" value="lsRememberMe" id="rememberMeSignup">
+                    <label for="rememberMeSignup">Remember me</label>
+                </div>
+                <div class="modal-signup-btn">
+                    <input class="signup-btn" type="submit" onclick="lsRememberMe()" value="Sign up"></div>
+            </form>
 
         </div>
-        <div class="col-md-6">
-            
-            <div class="all-users-wrapper w-75">
-                <h3>All Users</h3>
-                <ul class="list-group all-users-list">
-                    
-                </ul> 
+
+        <div class="sign-in-page hidden">
+            <div class="signin-header">
+                <h1>Login</h1>
             </div>
+            <button class="close-btn-in">&times;</button>
+            <form action="#">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="checkbox">
+                    <input type="checkbox" value="lsRememberMe" id="rememberMeSignin">
+                    <label for="rememberMeSignin">Remember Me</label>
+                </div>
+                <div class="modal-signin-btn"><input class="signin-btn" type="submit" onclick="lsRememberMe()"
+                        value="Login">
+                </div>
+            </form>
 
         </div>
     </div>
 
+    <div class="overlay hidden"></div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
