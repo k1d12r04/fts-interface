@@ -54,6 +54,7 @@ header {
 
 button.sign-in,
 .sign-up {
+  width: 105px;
   padding: 8px 24px;
   border: none;
   border-radius: 5px;
