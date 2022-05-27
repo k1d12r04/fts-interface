@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="cta.css">
+</head>
+
+<body>
+
+  <div class="header-logo"> <a href="index.html">Back to main page</a>
+  </div>
+
+  <div class="cta">
+    <div class="sign-up-page hidden">
+      <div class="signup-header">
+        <h1>Sign up</h1>
+      </div>
+      <form action="#">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="signup-email">Email</label>
+        <input type="mail" id="signup-email" name="email">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password">
+        <div class="checkbox">
+          <input type="checkbox" value="lsRememberMe" id="rememberMeSignup">
+          <label for="rememberMeSignup">Remember me</label>
+        </div>
+        <div class="modal-signup-btn">
+          <input class="signup-btn" type="submit" onclick="lsRememberMe()" value="Sign up"></div>
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

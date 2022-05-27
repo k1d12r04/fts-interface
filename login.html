@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="cta.css">
+</head>
+
+<body>
+
+  <div class="header-logo"> <a href="index.html">Back to main page</a>
+  </div>
+
+  <div class="cta">
+    <div class="sign-in-page hidden">
+      <div class="signin-header">
+        <h1>Login</h1>
+      </div>
+      <form action="#">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <div class="checkbox">
+          <input type="checkbox" value="lsRememberMe" id="rememberMeSignin">
+          <label for="rememberMeSignin">Remember Me</label>
+        </div>
+        <div class="modal-signin-btn"><input class="signin-btn" type="submit" onclick="lsRememberMe()" value="Login">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

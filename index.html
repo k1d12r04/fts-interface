@@ -20,60 +20,15 @@
             </ul>
         </nav>
         <div class="cta-btns">
-            <button class="sign-up">Sign up</button>
-            <button class="sign-in">Login</button>
+            <button class="sign-up"><a href="sign up.html">Sign up</a></button>
+            <button class="sign-in"><a href="login.html">Login</a></button>
         </div>
     </header>
 
-    <div class="cta">
-        <div class="sign-up-page hidden">
-            <div class="signup-header">
-                <h1>Sign up</h1>
-            </div>
-            <button class="close-btn-up">&times;</button>
-            <form action="#">
+<div class="background-img"></div>
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="signup-email">Email</label>
-                <input type="mail" id="signup-email" name="email">
-                <label for="signup-password">Password</label>
-                <input type="password" id="signup-password" name="password">
-                <div class="checkbox">
-                    <input type="checkbox" value="lsRememberMe" id="rememberMeSignup">
-                    <label for="rememberMeSignup">Remember me</label>
-                </div>
-                <div class="modal-signup-btn">
-                    <input class="signup-btn" type="submit" onclick="lsRememberMe()" value="Sign up"></div>
-            </form>
 
-        </div>
 
-        <div class="sign-in-page hidden">
-            <div class="signin-header">
-                <h1>Login</h1>
-            </div>
-            <button class="close-btn-in">&times;</button>
-            <form action="#">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
-                <div class="checkbox">
-                    <input type="checkbox" value="lsRememberMe" id="rememberMeSignin">
-                    <label for="rememberMeSignin">Remember Me</label>
-                </div>
-                <div class="modal-signin-btn"><input class="signin-btn" type="submit" onclick="lsRememberMe()"
-                        value="Login">
-                </div>
-            </form>
-
-        </div>
-    </div>
-
-    <div class="overlay hidden"></div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
