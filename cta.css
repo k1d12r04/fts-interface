@@ -12,8 +12,6 @@ body {
 }
 
 .cta {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   margin-top: 80px;
   color: #fff;
@@ -29,10 +27,10 @@ form {
   border-radius: 5px;
   background-color: #3f51b5;
   width: 80%;
+  max-width: 440px;
+  margin: 0 auto;
   height: auto;
-  justify-self: center;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  
 }
 
 label {
