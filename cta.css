@@ -37,7 +37,7 @@ form {
 
 label {
   display: block;
-  line-height: 24px;
+  line-height: 1.6;
 }
 
 input[type="text"],
