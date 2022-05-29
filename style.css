@@ -134,5 +134,17 @@ button.sign-up:hover,
 
 }
 
+@media only screen and (max-width: 577px) {
+
+  header {
+    flex-direction: column;
+    height: 25%;
+  }
+
+  .background-img{
+    height: calc(100% - 25%);
+  }
+}
+
 
 
